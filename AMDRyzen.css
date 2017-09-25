@@ -1,0 +1,583 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 100%;
+	font-family: "helvetica", sans-serif;
+	font-weight: lighter;
+	word-break: keep-all;
+}
+
+html{	
+	background-color: #000;
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	overflow-x: hidden;
+}
+
+header{
+	width: 100%;
+	z-index: 3;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, .65);
+	border-top: 1px solid rgba(0,0,0, 1);
+	color: #fff;
+}
+
+.listOfSections{
+	top: 0;
+	position: fixed;
+	padding: 0 .5em;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .6);
+	left: -212px;
+}
+
+.listOfSections > ul {
+    margin-top: 6em;
+}
+
+
+.listOfSelections li{
+	display: block;
+}
+
+.sectionsLinks{
+	text-transform: uppercase;
+	display: block;
+	padding: .75em;
+	text-decoration: none;
+}
+
+.goTo{
+	position: fixed;
+	top: 39%;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, .8);
+}
+
+.clickMeTab{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.rightClickMeTab{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10000;
+}
+
+.clickMeTab, .rightClickMeTab{
+	background-color: rgba(0, 0, 0, .8);
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+footer{
+	background-color: #1c1c1f;
+	padding: 0 0 10%; 
+}
+
+h1{
+	font-size: 3em;
+}
+
+h2{
+	font-size: 2.5em;
+}
+
+h3{
+	font-size: 2em;
+}
+
+h4{
+	font-size: 1em;
+}
+
+p{
+	font-size: 1.25em;
+	color: #f08208;
+}
+
+strong{
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+
+a, i, .sectionsLinks, ul li{
+	-webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+a, i, .sectionsLinks{
+	display: block;	
+}
+
+ul li{
+	list-style-type: none;
+}
+
+video::-webkit-media-controls {
+    display: none;
+}
+
+.titleTop{
+	overflow: hidden;
+	padding: 1em 3em .5em 3em;
+	background: -moz-linear-gradient(top, rgba(0,0,0,1) 12%, rgba(0,0,0,1) 36%, rgba(0,0,0,1) 38%, rgba(0,0,0,1) 46%, rgba(0,0,0,1) 54%, rgba(0,0,0,0.63) 80%, rgba(0,0,0,0.56) 85%, rgba(0,0,0,0.43) 94%, rgba(0,0,0,0.38) 97%, rgba(0,0,0,0.13) 99%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 12%,rgba(0,0,0,1) 36%,rgba(0,0,0,1) 38%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 54%,rgba(0,0,0,0.63) 80%,rgba(0,0,0,0.56) 85%,rgba(0,0,0,0.43) 94%,rgba(0,0,0,0.38) 97%,rgba(0,0,0,0.13) 99%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 12%,rgba(0,0,0,1) 36%,rgba(0,0,0,1) 38%,rgba(0,0,0,1) 46%,rgba(0,0,0,1) 54%,rgba(0,0,0,0.63) 80%,rgba(0,0,0,0.56) 85%,rgba(0,0,0,0.43) 94%,rgba(0,0,0,0.38) 97%,rgba(0,0,0,0.13) 99%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.titleTop h1{
+	color: #f08208;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.headerNav{
+	padding: 0 3em .25em; 
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.logoAMD{
+	width: 7em;
+	float: left;
+	margin-left: 1em;
+}
+
+.centerLinksContainer{
+	margin: 0 auto;
+}
+
+.contentContainer, .contentInfo{
+	overflow: hidden;
+}
+
+.contentInfo{
+	margin: 0 auto;
+}
+.contentInfo h1{
+	overflow: hidden;
+	margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    max-width: 20em; 
+}
+
+.contentInfo h1 > span{
+    margin: 5% 0;
+    display: inline-block;
+    font-size: 1.25em;
+}
+
+.secondContentInfoH1 span{
+	margin: 5.25% 0 4.75% 0;
+}
+
+.contentRyzenLogo{
+	float: left;
+	width: 25%;
+}
+
+.linkContainer{
+	float: left;
+	margin: 0 0 0 1em;
+}
+
+.topRightNavLinkContainer{
+	float: right;
+}
+
+.topRightLinks{
+	overflow: hidden;
+	padding: .5em 3em;
+}
+
+.topRightNavLinkContainer a{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: .85em;
+	padding: .5em .75em;
+
+	-webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; 
+}
+
+.clickLink{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: .5em 1em; 
+}
+
+.titleTopLinkContainer{
+	margin: 1.25em 1em 2em;
+}
+
+.fullscreenBackgroundVideo{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -999;
+}
+
+.parallaxVideo{
+	height: 100%;
+}
+
+.fullscreenBackgroundVideoCreator {
+    width: 100%;
+    margin: -4px 0;
+}
+
+ .parallaxGamingTitle{
+ 	position: absolute;
+	text-align: left;
+	padding: 2em 0 2em 3em;
+ }
+
+.parallaxVideoContent{ /* parallaxContent */
+	background: none repeat scroll 0 0 rgba(0, 0, 0, .65);
+	border-top: 1px solid rgba(0,0,0, 1);
+	border-bottom: 1px solid rgba(0,0,0, 1);
+	height: auto;
+	padding: 2em 3em;
+	color: #fff;
+}
+
+.parallaxImage2{
+	height: 100vh;
+	background-image: url("assets/RyzenWhiteRGB.png");
+	background-attachment: fixed;
+	background-position: center 20%;
+	background-repeat: no-repeat;
+	background-size: 35% auto;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.parallaxImage2Title{
+	position: relative;
+	top: 55%;
+	height: 37.75vh;
+	padding: 2em 0 1em 0;
+	background-color: rgba(0,0,0, .85);
+}
+
+.parallaxImage2Title h1, .parallaxImage2Title h2{
+	text-align: center;
+}
+
+.parallaxImage2Title h1{
+	font-size: 2.5em;
+}
+
+.parallaxImage2Title h2{
+	margin: .85em 1em;
+}
+
+.parallaxImage2Title h2 a{
+	font-size: .5em;
+	display: inline-block;
+	margin: 0 1em;
+	padding: 2% 3%;
+	border: 1px solid #fff; 
+}
+
+.fullscreenBackgroundVideo2{
+	width: 100%;
+}
+
+.fa-circle{
+	display: block;
+	color: #fff;
+	font-size: 1em;
+	padding: .75em 1em;
+	background-color: rgba(0, 0, 0, .8);
+	background: none;
+	text-decoration: none;
+	-webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; 
+}
+
+.fa-bars, .fa-ellipsis-v{
+	font-size: 2em;
+	display: inline-block;
+	color: #fff;
+	opacity: 1;
+	text-decoration: none;
+	-webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; 
+}
+
+.fa-bars{
+	
+	padding: .25em .5em;
+}
+
+.fa-ellipsis-v{
+	padding: .25em .75em;
+}
+
+.footerLinksContainer{
+	width: 90%;
+	margin: 0 auto;
+}	
+
+.footerLinksContainer ul{
+	margin: 0 0 1em 0;
+}
+
+.footerLinksContainer ul li{
+	display: inline-block;
+	padding: 1em 2%; 
+}
+
+.disappearingLinks{
+	display: none;
+}
+
+.btnPlayPause{
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: block;
+	width: 1.25em;
+	background-color: rgba(0, 0, 0, .8);
+	margin: 0 auto;
+	margin-top: 18%;
+	text-align: center;
+	padding: 4% 4.5%;
+	border-radius: 50%;
+	font-size: 3em;
+	-webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;	
+}
+
+.btnPlayPause i{
+	padding: .25em; 
+}
+/** ------------------------------------ Active Styles ---------------------------------- **/
+
+.sideNavActive{
+     color: #fe9b00;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.adjustVideoControls{
+	position: absolute;
+	margin: 0 auto;
+	padding: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	font-size: 2em;
+	border-radius: 0;
+	margin-top: 53.5%;
+	text-align: center;
+	width: 100%;
+	-webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; 
+}
+
+/* ------------------------------------- HOVER STYLES ------------------------------------ */
+
+a:hover, i:hover, a:focus{
+	color: #f08208;
+}
+
+/* -------------------------------------- Media Queries ------------------------------------ */
+
+@media screen and (max-width: 980px){
+
+	.parallaxGamingTitle h1{
+		font-size: 2em;
+	}
+
+	.parallaxImage2Title h1{
+		font-size: 3em;
+	}
+
+	.parallaxImage2Title h2 a{
+		font-size: .75em;
+	}
+
+	.linkContainer{
+		position: fixed;
+		height: 100%;
+		top: 0;
+		right: -250px;
+		margin-top: 0;
+		padding-top: 4em;
+		background-color: rgba(0, 0, 0, .6);
+	}
+
+	.listOfSections > ul {
+    	margin-top: 4em;
+	}
+
+	.disappearingLinks, .rightClickMeTab, .linkContainer span{
+		display: block;
+	}
+
+	.topRightLinks{
+		display: none;
+	}
+
+	.headerNav{
+		padding: .75em 3em;
+	}
+
+	.logoAMD{
+		width: 6.5em;
+	}
+}
+
+@media screen and (max-width: 730px){
+
+	.parallaxVideo {
+    	height: 48%;
+	}
+
+	.parallaxImage2Title h1{
+		font-size: 3em;
+	}
+
+	.parallaxImage2Title h2 a{
+		font-size: .75em;
+	}
+
+	.contentInfo h1 > span {
+    	font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 620px){
+
+	.parallaxGamingTitle {
+	    padding: .75em 0 1em 1em;
+	}
+}
+
+@media screen and (max-width: 565px){
+
+	.contentRyzenLogo {
+		display: block;
+    	float: none;
+    	margin: 0 auto;
+    	width: 50%;
+	}
+
+	.contentInfo h1{
+		text-align: center;
+		font-size: 1em;
+	}
+
+	.parallaxImage2{
+		background-size: 60% auto;
+	}
+
+	.parallaxImage2Title h1{
+		font-size: 2.5em;
+	}
+
+	.parallaxImage2Title h2 a{
+		font-size: .6em;
+	}
+
+	.parallaxVideoContent{
+		padding: 2em 0;
+	}
+
+	.contentInfo h1 > span {
+    	font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 520px){
+
+	.parallaxGamingTitle h1{
+		font-size: 1.5em;
+	}
+
+	.parallaxImage2{
+		background-size: 80% auto;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.parallaxVideo {
+    	height: 28%;
+	}
+
+	.parallaxImage2Title h1{
+		font-size: 2.25em;
+	}
+}
+
+@media screen and (max-width: 330px){
+
+	.parallaxVideo {
+    	height: 28%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
